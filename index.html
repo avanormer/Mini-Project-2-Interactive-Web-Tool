@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Study Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Flashcard Study Tool</h1>
+        </header>
+        <section id="add-flashcard">
+            <h2>Add New Flashcard</h2>
+            <form id="flashcard-form">
+                <label for="question">Question:</label>
+                <input type="text" id="question" required>
+                <label for="answer">Answer:</label>
+                <input type="text" id="answer" required>
+                <button type="submit">Add Flashcard</button>
+            </form>
+        </section>
+        <section id="flashcard-display">
+            <div id="flashcard" class="flashcard">
+                <div class="front">Question</div>
+                <div class="back hidden">Answer</div>
+            </div>
+            <div class="controls">
+                <button id="flip">Flip Card</button>
+                <button id="next">Next Card</button>
+                <button id="previous">Previous Card</button>
+                <button id="memorized">Mark as Memorized</button>
+                <button id="practice">Mark as Needs Practice</button>
+                <button id="reset">Reset All Cards</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
